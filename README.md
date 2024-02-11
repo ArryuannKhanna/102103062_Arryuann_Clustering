@@ -54,12 +54,21 @@ We compare the performance of the above algorithms using various pre-processing 
 
 ### Using K-Mean Clustering
 
+0.5481	390.9995	0.5652	0	0	0
+KMeans(n_clusters=3, random_state=3348)
+ 	Silhouette	Calinski-Harabasz	Davies-Bouldin	Homogeneity	Rand Index	Completeness
+0	0.5550	499.2357	0.5645	0	0	0
+KMeans(n_clusters=4, random_state=3348)
+ 	Silhouette	Calinski-Harabasz	Davies-Bouldin	Homogeneity	Rand Index	Completeness
+0	0.5384	602.3528	0.5070	
+
+
 | Parameters        | No Data Processing | | | Using Normalization | | | Using Transform | | | Using PCA | | | Using T+N | | | T+N+PCA | | |
 |-------------------|--------------------|----|----|---------------------|----|----|-----------------|----|----|-----------|----|----|---------|----|----|---------|----|----|
 |                   | c=3                | c=4 | c=5 | c=3                 | c=4 | c=5 | c=3             | c=4 | c=5 | c=3      | c=4 | c=5 | c=3    | c=4 | c=5 | c=3    | c=4 | c=5 |
-| Silhouette        | 0.5481			  | 0.5532 | 0.5384	  | 0.1119               | 0.61 | 0.55 | NA              | NA  | NA  | 1         | 1    | 1    | 0.54    | 0.43 | 0.35 | 0.54    | 0.44 | 0.36 |
-| Calinski-Harabasz | 390.9995      |499.8170 | 602.3528| 30.5711             | 7654 | 7999 | NA              | NA  | NA  | 5294      | 7207 | 1110 | 1109    | 1245 | 1152 | 1190    | 1290 | 1202 |
-| Davies-Bouldins   |  0.5652       | 0.5760	|	0.5070  | 2.7694              | 0.67 | 0.77 | NA              | NA  | NA  | 0.39      | 0.41 | 0.63 | 0.63    | 0.77 | 0.95 | 0.62    | 0.75 | 0.92 |
+| Silhouette        | 0.5481			  | 0.5532 | 0.5384	  | 0.1119              | 0.1091 | 0.1050| 0.5356        | 0.5686	 |0.6053| 0.5481  | 0.5550 | 0.5384 | 0.54    | 0.43 | 0.35 | 0.54    | 0.44 | 0.36 |
+| Calinski-Harabasz | 390.9995      |499.8170 | 602.3528| 30.5711             | 27.1911 |26.8564|487.2975      |630.9197 |816.6691|390.9995 |499.2357 |602.3528 | 1109    | 1245 | 1152 | 1190    | 1290 | 1202 |
+| Davies-Bouldins   |  0.5652       | 0.5760	|	0.5070  | 2.7694              | 2.3423	|2.1512	|0.5898      |0.5524	 |0.4887 |	0.5384    |0.5652 |0.5645 | 0.63    | 0.77 | 0.95 | 0.62    | 0.75 | 0.92 |
 
 
 ### Using Hierarchical Clustering
