@@ -57,32 +57,31 @@ We compare the performance of the above algorithms using various pre-processing 
 | Parameters        | No Data Processing | | | Using Normalization | | | Using Transform | | | Using PCA | | | Using T+N | | | T+N+PCA | | |
 |-------------------|--------------------|----|----|---------------------|----|----|-----------------|----|----|-----------|----|----|---------|----|----|---------|----|----|
 |                   | c=3                | c=4 | c=5 | c=3                 | c=4 | c=5 | c=3             | c=4 | c=5 | c=3      | c=4 | c=5 | c=3    | c=4 | c=5 | c=3    | c=4 | c=5 |
+| Silhouette        | 0.5481			  | 0.5532 | 0.5384	  | 0.1119               | 0.61 | 0.55 | NA              | NA  | NA  | 1         | 1    | 1    | 0.54    | 0.43 | 0.35 | 0.54    | 0.44 | 0.36 |
+| Calinski-Harabasz | 390.9995      |499.8170 | 602.3528| 30.5711             | 7654 | 7999 | NA              | NA  | NA  | 5294      | 7207 | 1110 | 1109    | 1245 | 1152 | 1190    | 1290 | 1202 |
+| Davies-Bouldins   |  0.5652       | 0.5760	|	0.5070  | 2.7694              | 0.67 | 0.77 | NA              | NA  | NA  | 0.39      | 0.41 | 0.63 | 0.63    | 0.77 | 0.95 | 0.62    | 0.75 | 0.92 |
+
+
+### Using Hierarchical Clustering
+
+| Parameters        | No Data Processing | | | Using Normalization | | | Using Transform | | | Using PCA | | | Using T+N | | | T+N+PCA | | |
+|-------------------|--------------------|----|----|---------------------|----|----|-----------------|----|----|-----------|----|----|---------|----|----|---------|----|----|
+|                   | c=3                | c=4 | c=5 | c=3                 | c=4 | c=5 | c=3             | c=4 | c=5 | c=3      | c=4 | c=5 | c=3    | c=4 | c=5 | c=3    | c=4 | c=5 |
 | Silhouette        | 0.74               | 0.72 | 0.68 | 0.69                | 0.61 | 0.55 | NA              | NA  | NA  | 1         | 1    | 1    | 0.54    | 0.43 | 0.35 | 0.54    | 0.44 | 0.36 |
 | Calinski-Harabasz | 3567               | 5012 | 4683 | 6633                | 7654 | 7999 | NA              | NA  | NA  | 5294      | 7207 | 1110 | 1109    | 1245 | 1152 | 1190    | 1290 | 1202 |
 | Davies-Bouldins   | 0.34               | 0.41 | 0.46 | 0.59                | 0.67 | 0.77 | NA              | NA  | NA  | 0.39      | 0.41 | 0.63 | 0.63    | 0.77 | 0.95 | 0.62    | 0.75 | 0.92 |
 
 
-### Using Hierarchical Clustering
-
-| Parameters       | No Data Processing | Using Normalization | Using Transform | Using PCA | Using T+N | T+N+PCA |
-|------------------|--------------------|---------------------|-----------------|-----------|-----------|---------|
-| Silhouette (c=3) | 1                  | 0.53                | NA              | 1         | 0.56      | 0.48    |
-| Silhouette (c=4) | 1                  | 0.49                | NA              | 1         | 0.47      | 0.48    |
-| Silhouette (c=5) | 1                  | 0.53                | NA              | 1         | 0.48      | 0.48    |
-| Calinski-Harabasz| 2766               | 1107                | NA              | 2766      | 3797      | 3598    |
-| Calinski-Harabasz| 2766               | 1693                | NA              | 1107      | 3598      | 3329    |
-| Calinski-Harabasz| 2766               | 2028                | NA              | 1107      | 3598      | 3867    |
-| Davies-Bouldins  | 0.99               | 0.14                | NA              | 0.09      | 0.57      | 0.71    |
-| Davies-Bouldins  | 0.14               | 0.18                | NA              | 0.14      | 0.72      | 0.77    |
-| Davies-Bouldins  | 0.18               | 0.60                | NA              | 0.71      | 0.78      | 0.77    |
 
 ### Using K-mean Shift Clustering
 
-| Parameters       | No Data Processing | Using Normalization | Using Transform | Using PCA | Using T+N | T+N+PCA |
-|------------------|--------------------|---------------------|-----------------|-----------|-----------|---------|
-| Silhouette (c=3) | 0.99               | 0.53                | NA              | 1         | 0.56      | 0.48    |
-| Silhouette (c=4) | 0.99               | 0.50                | NA              | 1         | 0.47      | 0.48    |
-| Silhouette (c=5) | 0.99               | 0.53                | NA              | 1         | 0.48
+| Parameters        | No Data Processing | | | Using Normalization | | | Using Transform | | | Using PCA | | | Using T+N | | | T+N+PCA | | |
+|-------------------|--------------------|----|----|---------------------|----|----|-----------------|----|----|-----------|----|----|---------|----|----|---------|----|----|
+|                   | c=3                | c=4 | c=5 | c=3                 | c=4 | c=5 | c=3             | c=4 | c=5 | c=3      | c=4 | c=5 | c=3    | c=4 | c=5 | c=3    | c=4 | c=5 |
+| Silhouette        | 0.74               | 0.72 | 0.68 | 0.69                | 0.61 | 0.55 | NA              | NA  | NA  | 1         | 1    | 1    | 0.54    | 0.43 | 0.35 | 0.54    | 0.44 | 0.36 |
+| Calinski-Harabasz | 3567               | 5012 | 4683 | 6633                | 7654 | 7999 | NA              | NA  | NA  | 5294      | 7207 | 1110 | 1109    | 1245 | 1152 | 1190    | 1290 | 1202 |
+| Davies-Bouldins   | 0.34               | 0.41 | 0.46 | 0.59                | 0.67 | 0.77 | NA              | NA  | NA  | 0.39      | 0.41 | 0.63 | 0.63    | 0.77 | 0.95 | 0.62    | 0.75 | 0.92 |
+
 
 
 > **Note**: The table will be filled in with actual results from the analysis.
