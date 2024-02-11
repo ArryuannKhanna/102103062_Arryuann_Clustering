@@ -18,13 +18,18 @@ In this study, we employ several clustering algorithms to evaluate their perform
 
 K-Means clustering is a method of vector quantization that aims to partition 'n' observations into 'k' clusters in which each observation belongs to the cluster with the nearest mean.
 
-![K-Means Clustering Graph](Graphs/AP2dpca.png "Optional title")
+#### 2D PCA GRAPH-
+![K-Means Clustering Graph](Graphs/kmeans2dpca.png "Optional title")
+#### 3D GRAPH-
+![K-Means Clustering Graph](Graphs/kmeans3dplot.png "Optional title")
+#### ELBOW GRAPH-
+![K-Means Clustering Graph](Graphs/kmeanselbow.png "Optional title")
 
 ### Hierarchical/Agglomerative Clustering
 
 Agglomerative clustering is a type of hierarchical clustering that builds nested clusters by merging or splitting them successively. This hierarchy of clusters is represented as a tree (or dendrogram).
 
-![Hierarchical Clustering Graph](path_to_hierarchical_graph)
+![Hierarchical Clustering Graph](Graphs/kmeans3dplot.png)
 
 ### Affinity Propagation
 
