@@ -50,12 +50,45 @@ We compare the performance of the above algorithms using various pre-processing 
 
 ### Sample Result Table
 
-| Algorithm | Pre-Processing | Number of Clusters | Silhouette Score | Calinski-Harabasz | Davies-Bouldin |
-|-----------|----------------|--------------------|------------------|-------------------|----------------|
-| K-Means   | None           | 3                  |                  |                   |                |
-| K-Means   | Normalization  | 3                  |                  |                   |                |
-| ...       | ...            | ...                | ...              | ...               | ...            |
-| Spectral  | PCA            | 5                  |                  |                   |                |
+## Performance using different clustering techniques on various parameters
+
+### Using K-Mean Clustering
+
+| Parameters       | No Data Processing | Using Normalization | Using Transform | Using PCA     | Using T+N     | T+N+PCA          |  
+|                  |  c=3  | c=4 | c=5  | c=3 | c=4 | c=5     | c=3 | c=4 | c=5 |c=3 | c=4 | c=5|c=3 | c=4 | c=5|| c=3 | c=4 | c=5 |
+|------------------|--------------------|---------------------|-----------------|-----------|-----------|---------|
+| Silhouette (c=3) | 0.74               | 0.72                | NA              | 1         | 0.54      | 0.35    |
+| Silhouette (c=4) | 0.72               | 0.68                | NA              | 1         | 0.43      | 0.44    |
+| Silhouette (c=5) | 0.68               | 0.64                | NA              | 1         | 0.35      | 0.36    |
+| Calinski-Harabasz| 3567               | 5012                | NA              | 5294      | 7207      | 1110    |
+| Calinski-Harabasz| 4683               | 6633                | NA              | 7654      | 1110      | 1245    |
+| Calinski-Harabasz| 7999               | NA                  | NA              | 7999      | 1110      | 1152    |
+| Davies-Bouldins  | 0.34               | 0.41                | NA              | 0.39      | 0.63      | 0.77    |
+| Davies-Bouldins  | 0.41               | 0.46                | NA              | 0.41      | 0.63      | 0.62    |
+| Davies-Bouldins  | 0.46               | 0.59                | NA              | 0.77      | 0.95      | 0.75    |
+
+### Using Hierarchical Clustering
+
+| Parameters       | No Data Processing | Using Normalization | Using Transform | Using PCA | Using T+N | T+N+PCA |
+|------------------|--------------------|---------------------|-----------------|-----------|-----------|---------|
+| Silhouette (c=3) | 1                  | 0.53                | NA              | 1         | 0.56      | 0.48    |
+| Silhouette (c=4) | 1                  | 0.49                | NA              | 1         | 0.47      | 0.48    |
+| Silhouette (c=5) | 1                  | 0.53                | NA              | 1         | 0.48      | 0.48    |
+| Calinski-Harabasz| 2766               | 1107                | NA              | 2766      | 3797      | 3598    |
+| Calinski-Harabasz| 2766               | 1693                | NA              | 1107      | 3598      | 3329    |
+| Calinski-Harabasz| 2766               | 2028                | NA              | 1107      | 3598      | 3867    |
+| Davies-Bouldins  | 0.99               | 0.14                | NA              | 0.09      | 0.57      | 0.71    |
+| Davies-Bouldins  | 0.14               | 0.18                | NA              | 0.14      | 0.72      | 0.77    |
+| Davies-Bouldins  | 0.18               | 0.60                | NA              | 0.71      | 0.78      | 0.77    |
+
+### Using K-mean Shift Clustering
+
+| Parameters       | No Data Processing | Using Normalization | Using Transform | Using PCA | Using T+N | T+N+PCA |
+|------------------|--------------------|---------------------|-----------------|-----------|-----------|---------|
+| Silhouette (c=3) | 0.99               | 0.53                | NA              | 1         | 0.56      | 0.48    |
+| Silhouette (c=4) | 0.99               | 0.50                | NA              | 1         | 0.47      | 0.48    |
+| Silhouette (c=5) | 0.99               | 0.53                | NA              | 1         | 0.48
+
 
 > **Note**: The table will be filled in with actual results from the analysis.
 
