@@ -18,7 +18,7 @@ In this study, we employ several clustering algorithms to evaluate their perform
 
 K-Means clustering is a method of vector quantization that aims to partition 'n' observations into 'k' clusters in which each observation belongs to the cluster with the nearest mean.
 
-![K-Means Clustering Graph](Graphs/kmeans2dpca "Optional title")
+![K-Means Clustering Graph](/Graphs/kmeans2dpca/ "Optional title")
 
 ### Hierarchical/Agglomerative Clustering
 
