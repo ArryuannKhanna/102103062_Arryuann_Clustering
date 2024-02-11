@@ -23,25 +23,40 @@ K-Means clustering is a method of vector quantization that aims to partition 'n'
 #### 3D GRAPH-
 ![K-Means Clustering Graph](Graphs/kmeans3dplot.png "Optional title")
 #### ELBOW GRAPH-
-![K-Means Clustering Graph](Graphs/kmeanselbow "Optional title")
+![K-Means Clustering Graph](Graphs/Kmeanselbow.png "Optional title")
 
 ### Hierarchical/Agglomerative Clustering
 
 Agglomerative clustering is a type of hierarchical clustering that builds nested clusters by merging or splitting them successively. This hierarchy of clusters is represented as a tree (or dendrogram).
 
-![Hierarchical Clustering Graph](Graphs/kmeans3dplot.png)
+!#### 2D PCA GRAPH-
+![Hierarchical Clustering Graph](Graphs/hclust2dpca.png "Optional title")
+#### 3D GRAPH-
+![Hierarchical Clustering Graph](Graphs/hclust3dplot.png "Optional title")
+#### ELBOW GRAPH-
+![Hierarchical Clustering Graph](Graphs/hclustelbow.png "Optional title")
 
 ### Affinity Propagation
 
 Affinity propagation creates clusters by sending messages between pairs of samples until convergence. Unlike K-Means, it does not require the number of clusters to be determined or estimated before running the algorithm.
 
-![Affinity Propagation Graph](path_to_affinity_graph)
+!#### 2D PCA GRAPH-
+![Affinity Propagation Graph](Graphs/AP2dpca.png "Optional title")
+#### 3D GRAPH-
+![Affinity Propagation Graph](Graphs/AP3dplot.png "Optional title")
+#### ELBOW GRAPH-
+![Affinity Propagation Graph](Graphs/APelbow.png "Optional title")
 
 ### Spectral Clustering
 
 Spectral clustering uses the spectrum (eigenvalues) of the similarity matrix of the data to perform dimensionality reduction before clustering in fewer dimensions.
 
-![Spectral Clustering Graph](path_to_spectral_graph)
+!#### 2D PCA GRAPH-
+![Spectral Clustering Graph](Graphs/SC2dpca.png "Optional title")
+#### 3D GRAPH-
+![Spectral Clustering Graph](Graphs/SC3dplot.png "Optional title")
+#### ELBOW GRAPH-
+![Spectral Clustering Graph](Graphs/SCelbow.png "Optional title")
 
 ## Comparative Study
 
