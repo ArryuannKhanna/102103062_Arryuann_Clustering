@@ -23,7 +23,7 @@ K-Means clustering is a method of vector quantization that aims to partition 'n'
 #### 3D GRAPH-
 ![K-Means Clustering Graph](Graphs/kmeans3dplot.png "Optional title")
 #### ELBOW GRAPH-
-![K-Means Clustering Graph](Graphs/kmeanselbow.png "Optional title")
+![K-Means Clustering Graph](Graphs/kmeanselbow "Optional title")
 
 ### Hierarchical/Agglomerative Clustering
 
